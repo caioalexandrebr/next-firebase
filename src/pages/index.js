@@ -1,5 +1,8 @@
 import Head from 'next/head';
 
+import Form from '@/components/Form';
+import List from '@/components/List';
+
 export default function Home() {
   return (
     <>
@@ -9,7 +12,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>next-firebase</h1>
+        <Form />
+        <List />
       </main>
     </>
   );
