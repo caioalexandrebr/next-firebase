@@ -9,17 +9,12 @@ const Form = () => {
     e.preventDefault();
 
     if (inputValue.length > 3) {
-      const task = {
+      const newTask = {
         message: inputValue,
       };
 
-      const docRef = addTask(task);
-
-      if (docRef.id) {
-        setInputValue('');
-      }
-    } else {
-      console.log('[Error] Message must contain at least 3 characters');
+      addTask(newTask);
+      setInputValue('');
     }
   };
 
